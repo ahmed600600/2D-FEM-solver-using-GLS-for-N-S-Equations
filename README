@@ -1,0 +1,20 @@
+# 2D Lid-Driven Cavity FEM Solver
+
+This project is a 2D Finite Element Method (FEM) solver for the incompressible Navier-Stokes equations, simulating a lid-driven cavity at **Re=1000**.
+
+The script programmatically generates a structured quadrilateral mesh using Gmsh, validates its quality (Jacobian and aspect ratio), and then solves the flow using a Q1/Q1 element formulation with **Galerkin/Least-Squares (GLS) stabilization**. Finally, it visualizes the resulting velocity and pressure fields.
+
+## 🏃‍♂️ How to Run
+
+### 1. Requirements
+
+**Python Libraries:**
+* `numpy`
+* `scipy`
+* `matplotlib`
+* `meshio`
+* `numba`
+
+You can install these using:
+```bash
+pip install -r requirements.txt
